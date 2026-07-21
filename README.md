@@ -1,25 +1,32 @@
-# IPL-Cricket-Data-Analysis-using-Pandas-
-🏏 An exploratory data analysis project on IPL datasets using Python and Pandas to uncover team performance, player statistics, match trends, and key cricket insights.
-# 🏏 IPL Data Analysis using Pandas
+# 🏏 IPL Match Analysis Using Python, Pandas & Matplotlib
 
-A comprehensive data analysis project exploring the Indian Premier League (IPL) dataset using **Python** and **Pandas**. This project focuses on cleaning, transforming, and analyzing IPL match data to uncover meaningful insights and statistics.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
----
+## 📖 Project Overview
 
-## 📌 Project Overview
+This project performs **Exploratory Data Analysis (EDA)** on an Indian Premier League (IPL) match dataset using **Python, Pandas, and Matplotlib**.
 
-The objective of this project is to perform **Exploratory Data Analysis (EDA)** on IPL datasets using Pandas. It demonstrates data manipulation, filtering, grouping, aggregation, and statistical analysis to answer cricket-related questions.
+The main objective is to analyze IPL match data, discover meaningful insights, understand team performance, explore player achievements, and visualize important trends through charts.
+
+This project demonstrates practical data analysis skills and follows a complete EDA workflow from data loading to visualization.
 
 ---
 
 ## 🎯 Objectives
 
-- Import and explore IPL datasets
-- Clean and preprocess raw data
+- Explore IPL match dataset
+- Clean and preprocess the data
 - Handle missing values
-- Analyze team and player performances
-- Discover match trends and winning patterns
-- Generate meaningful cricket insights using Pandas
+- Perform Exploratory Data Analysis (EDA)
+- Analyze team performances
+- Analyze Player of the Match awards
+- Study toss decisions
+- Explore venue and city statistics
+- Create meaningful visualizations
+- Extract business insights from cricket data
 
 ---
 
@@ -27,126 +34,149 @@ The objective of this project is to perform **Exploratory Data Analysis (EDA)** 
 
 - Python
 - Pandas
-- NumPy
+- Matplotlib
 - Jupyter Notebook
 
 ---
 
-## 📂 Dataset
+## 📂 Dataset Information
 
-The dataset includes IPL match information such as:
+- **Dataset:** IPL Match Data
+- **Rows:** 950
+- **Columns:** 20
+
+Main columns include:
 
 - Match ID
 - Season
-- Date
-- Teams
+- City
+- Team1
+- Team2
+- Venue
 - Toss Winner
 - Toss Decision
-- Venue
-- Winner
+- Winning Team
+- Margin
 - Player of the Match
-- Runs
-- Wickets
 - Umpires
 
 ---
 
-## 📊 Analysis Performed
+## 🧹 Data Cleaning
 
-- Dataset Overview
+The dataset was cleaned before analysis by:
+
+- Checking duplicate records
+- Handling missing values
+- Filling missing city names
+- Handling missing Player of the Match values
+- Filling missing Super Over values
+- Cleaning winning margin data
+- Preserving meaningful missing values in the `method` column
+
+---
+
+## 📊 Exploratory Data Analysis
+
+The following analyses were performed:
+
+- Total IPL matches
+- Total IPL seasons
+- Matches played per season
+- Most successful IPL teams
+- Team winning percentage
+- Top Player of the Match winners
+- Toss winner analysis
+- Toss decision analysis
+- Toss impact on match result
+- Super Over analysis
+- Win type analysis
+- Venue analysis
+- City analysis
+- Team appearance analysis
+- Most frequent team rivalries
+- Umpire analysis
+- Season-wise team performance
+- Season-wise Player of the Match leaders
+- Highest winning margins
+- Dataset summary
+
+---
+
+## 📈 Visualizations
+
+The project includes multiple Matplotlib visualizations such as:
+
+- Matches per Season
+- Top Winning Teams
+- Toss Decision Distribution
+- Top Player of the Match Winners
+- Top IPL Venues
+
+---
+
+## 📌 Key Insights
+
+- Some IPL franchises have consistently dominated the tournament.
+- Winning the toss does not always guarantee winning the match.
+- Fielding after winning the toss is the preferred strategy.
+- Certain stadiums host significantly more IPL matches.
+- A few players have won the Player of the Match award multiple times.
+- The number of matches varies across seasons due to tournament expansion.
+
+---
+
+## 🚀 Skills Demonstrated
+
 - Data Cleaning
-- Missing Value Handling
-- Duplicate Detection
-- Team-wise Match Wins
-- Season-wise Winners
-- Toss Decision Analysis
-- Most Successful Teams
-- Most Player of the Match Awards
-- Venue-wise Match Distribution
-- Winning Percentage Analysis
-- Filtering & Sorting Data
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Data Manipulation using Pandas
+- Data Visualization using Matplotlib
 - GroupBy Operations
-- Aggregation Functions
-- Data Export
+- Aggregation
+- Statistical Analysis
+- Business Insight Generation
+
+---
+
+## 📷 Project Preview
+
+You can add screenshots of your charts inside an **images/** folder.
+
+Example:
+
+```
+images/
+│── matches_per_season.png
+│── winning_teams.png
+│── toss_decision.png
+│── top_players.png
+│── venues.png
+```
 
 ---
 
 ## 📁 Project Structure
 
 ```
-IPL-Data-Analysis/
+IPL-Analysis/
 │
-├── IPL_Data_Analysis.ipynb
-├── matches.csv
+├── IPL_Analysis.ipynb
+├── ipl.csv
 ├── README.md
-└── screenshots/
+└── images/
 ```
 
 ---
 
-## 🚀 Features
+## 🎯 Future Improvements
 
-✅ Data Cleaning
-
-✅ Missing Value Handling
-
-✅ Statistical Summary
-
-✅ GroupBy & Aggregation
-
-✅ Filtering & Sorting
-
-✅ Cricket Insights
-
-✅ Beginner-Friendly Code
-
----
-
-## 📈 Skills Demonstrated
-
-- Data Cleaning
-- Data Wrangling
-- Exploratory Data Analysis (EDA)
-- Pandas DataFrames
-- Data Filtering
-- Data Aggregation
-- Data Visualization Preparation
-- Problem Solving
-
----
-
-## 🎓 Learning Outcomes
-
-After completing this project, I gained hands-on experience with:
-
-- Reading CSV files using Pandas
-- Working with DataFrames
-- Handling missing and duplicate data
-- Performing GroupBy operations
-- Filtering and sorting datasets
-- Generating real-world insights from data
-
----
-
-## 🔮 Future Improvements
-
-- Add Matplotlib visualizations
-- Add Seaborn charts
-- Build an interactive dashboard
-- Compare multiple IPL seasons
-- Predict match outcomes using Machine Learning
-
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
----
-
-## 📄 License
-
-This project is created for educational and learning purposes.
+- Interactive dashboards using Plotly
+- Seaborn visualizations
+- Advanced statistical analysis
+- Machine Learning predictions
+- Power BI dashboard integration
 
 ---
 
@@ -158,4 +188,4 @@ GitHub: https://github.com/kamijarwar
 
 ---
 
-⭐ If you found this project useful, don't forget to give it a star!
+## ⭐ If you found this project useful, consider giving it a Star.
